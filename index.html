@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#170607">
+<title>吴伟彰 & 刘彩萍｜婚礼邀请</title>
+<meta name="description" content="吴伟彰与刘彩萍的婚礼邀请｜2026年11月7日">
+<style>
+:root{--red:#6a0d13;--deep:#160607;--gold:#d7ad58;--gold2:#f1d994;--cream:#fbf5e9;--ink:#351719;--muted:#7c5c5e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--deep);color:var(--cream);font-family:"Noto Serif SC","Songti SC","STSong","Microsoft YaHei",serif}
+a{text-decoration:none;color:inherit}
+.section{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;padding:60px 20px;overflow:hidden}
+.section.light{background:var(--cream);color:var(--ink)}
+.frame{position:absolute;inset:12px;border:1px solid rgba(215,173,88,.48);pointer-events:none}
+.inner{width:min(900px,100%);text-align:center}
+.cover{background:#120405}
+.cover .hero{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.08),rgba(0,0,0,.82)),url("photos/photo_01.jpg") center 30%/cover no-repeat;opacity:.62}
+.cover .content{position:relative;text-align:center;z-index:2}
+.kicker{font:12px Georgia,serif;letter-spacing:5px;color:var(--gold2)}
+.xi{font-size:88px;line-height:.9;color:var(--gold2);text-shadow:0 2px 18px #000;margin:24px 0}
+.names{font-size:clamp(38px,10vw,64px);letter-spacing:8px;margin:0 0 10px}
+.en{font:12px Georgia,serif;letter-spacing:4px;color:#e5cb8a}
+.date{margin-top:28px;font-size:20px;letter-spacing:4px;color:#fff}
+.orn{color:var(--gold);letter-spacing:7px;font-size:12px;margin-top:18px}
+.scroll{position:absolute;bottom:28px;z-index:2;font-size:10px;letter-spacing:3px;color:var(--gold2)}
+h2{font-size:30px;color:var(--red);margin:0 0 8px}
+.sub{font:12px Georgia,serif;letter-spacing:3px;color:#9a6f31}
+.divider{width:100px;height:1px;background:#c99d4b;margin:20px auto}
+.story{max-width:680px;margin:auto;font-size:16px;line-height:2;color:#694849}
+.story-placeholder{opacity:.72}
+.count{display:flex;justify-content:center;gap:8px;margin:25px 0 0}
+.box{background:var(--red);border-radius:9px;padding:12px 8px;min-width:64px;color:#fff}
+.box b{display:block;font:700 24px Georgia,serif}.box span{font-size:9px;letter-spacing:1px;opacity:.8}
+.info{max-width:680px;margin:22px auto;background:#fff;border:1px solid #e5cd91;padding:24px;text-align:left;box-shadow:0 12px 35px rgba(61,20,20,.08)}
+.row{padding:14px 0;border-bottom:1px dashed #dfc98e}.row:last-child{border-bottom:0}
+.label{font-size:11px;letter-spacing:2px;color:#a27430}.value{font-size:17px;margin-top:5px;line-height:1.65}
+.btn{display:inline-block;background:var(--red);color:#fff;border:0;border-radius:28px;padding:13px 21px;margin:8px 4px;font-size:14px;cursor:pointer}
+.btn.outline{background:transparent;color:var(--red);border:1px solid var(--red)}
+.parents{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:680px;margin:22px auto}
+.parent-card{background:#fff;border:1px solid #e5cd91;padding:20px;border-radius:10px}
+.parent-card small{color:#9b7337;letter-spacing:2px}.parent-card div{font-size:17px;line-height:1.8;margin-top:8px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:24px}
+.gallery figure{margin:0;overflow:hidden;border-radius:10px;background:#eadfcd}
+.gallery img{width:100%;height:100%;min-height:240px;object-fit:cover;display:block;cursor:zoom-in}
+.gallery .wide{grid-column:span 2}.gallery .wide img{aspect-ratio:16/10}
+.gallery .tall img{aspect-ratio:2/3}
+.rsvp{max-width:680px;margin:22px auto;background:#fff;padding:24px;border:1px solid #e5cd91;color:var(--ink);text-align:left;border-radius:12px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #d8c39a;border-radius:8px;font:inherit;margin:6px 0 14px;background:#fff;color:var(--ink)}
+label{font-size:13px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.rsvp-note{font-size:12px;color:#7c5d5d;line-height:1.7}
+.status{display:none;padding:12px;border-radius:8px;margin:8px 0 14px;font-size:13px;line-height:1.6}
+.contact{background:linear-gradient(145deg,#2a070a,#570b11);text-align:center}
+.contact h2{color:var(--gold2)}
+.contact .card{display:inline-block;margin:8px;padding:16px 20px;border:1px solid rgba(216,173,85,.45);border-radius:10px;background:rgba(0,0,0,.18)}
+.footertext{font-size:12px;color:#d7b76d;line-height:1.8}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;z-index:50;padding:18px}
+.modal img{max-width:96vw;max-height:92vh;object-fit:contain;border-radius:8px}
+.modal button{position:absolute;top:18px;right:18px;background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:50%;width:42px;height:42px;font-size:22px}
+@media(max-width:560px){
+ .parents{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}
+ .gallery .wide{grid-column:span 1}.grid2{grid-template-columns:1fr}
+ .gallery img{min-height:300px}.gallery .wide img{aspect-ratio:3/4}
+}
+</style>
+</head>
+<body>
+
+<section class="section cover">
+  <div class="hero"></div><div class="frame"></div>
+  <div class="content">
+    <div class="kicker">WEDDING INVITATION</div>
+    <div class="xi">囍</div>
+    <div class="names">吴伟彰　刘彩萍</div>
+    <div class="en">GOH WEI CHANG · LAW CHAI PENG</div>
+    <div class="date">07 · 11 · 2026</div>
+    <div class="orn">敬请莅临　·　诚挚邀请</div>
+  </div>
+  <div class="scroll">向下滑动 ↓</div>
+</section>
+
+<section class="section light">
+ <div class="inner">
+  <h2>我们结婚了</h2><div class="sub">WE ARE GETTING MARRIED</div><div class="divider"></div>
+  <p class="story story-placeholder">这里先保留我们的爱情故事。<br>正式文案确认后，可以直接替换这一段，不影响其他页面。</p>
+  <div class="count">
+   <div class="box"><b id="d">--</b><span>DAYS</span></div>
+   <div class="box"><b id="h">--</b><span>HOURS</span></div>
+   <div class="box"><b id="m">--</b><span>MIN</span></div>
+   <div class="box"><b id="s">--</b><span>SEC</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="section light">
+ <div class="inner">
+  <h2>婚礼详情</h2><div class="sub">THE WEDDING DAY</div><div class="divider"></div>
+  <div class="info">
+   <div class="row"><div class="label">DATE 日期</div><div class="value">2026年11月7日 · 星期六</div></div>
+   <div class="row"><div class="label">RECEPTION 入席</div><div class="value">6:00 PM</div></div>
+   <div class="row"><div class="label">DINNER 开席</div><div class="value">7:00 PM</div></div>
+   <div class="row"><div class="label">VENUE 婚宴地点</div><div class="value">御善阁宴会厅<br>EMPEROR GRAND BALLROOM</div></div>
+  </div>
+  <a class="btn" href="https://maps.app.goo.gl/gMFMeZyWVH2bz2fXA?g_st=ac" target="_blank" rel="noopener">📍 打开 Google Maps 导航</a>
+  <button class="btn outline" onclick="addToCalendar()">📅 加入日历</button>
+ </div>
+</section>
+
+<section class="section light">
+ <div class="inner">
+  <h2>双方父母</h2><div class="sub">WITH OUR FAMILIES</div><div class="divider"></div>
+  <div class="parents">
+   <div class="parent-card"><small>新郎家 · GROOM'S FAMILY</small><div>吴锦才　先生<br>宋汶真　女士</div></div>
+   <div class="parent-card"><small>新娘家 · BRIDE'S FAMILY</small><div>刘贵强　先生<br>廖莉莉　女士</div></div>
+  </div>
+ </div>
+</section>
+
+<section class="section light">
+ <div class="inner">
+  <h2>我们的婚纱照</h2><div class="sub">OUR MOMENTS</div><div class="divider"></div>
+  <div class="gallery">
+   <figure class="wide"><img src="photos/photo_01.jpg" alt="婚纱照 1"></figure>
+   <figure class="tall"><img src="photos/photo_02.jpg" alt="婚纱照 2"></figure>
+   <figure class="tall"><img src="photos/photo_03.jpg" alt="婚纱照 3"></figure>
+   <figure class="wide"><img src="photos/photo_04.jpg" alt="婚纱照 4"></figure>
+   <figure class="tall"><img src="photos/photo_05.jpg" alt="婚纱照 5"></figure>
+   <figure class="tall"><img src="photos/photo_06.jpg" alt="婚纱照 6"></figure>
+   <figure class="wide"><img src="photos/photo_07.jpg" alt="婚纱照 7"></figure>
+   <figure class="tall"><img src="photos/photo_08.jpg" alt="婚纱照 8"></figure>
+   <figure class="tall"><img src="photos/photo_09.jpg" alt="婚纱照 9"></figure>
+   <figure class="wide"><img src="photos/photo_10.jpg" alt="婚纱照 10"></figure>
+  </div>
+ </div>
+</section>
+
+<section class="section light" id="rsvp">
+ <div class="inner">
+  <h2>诚邀您出席</h2><div class="sub">PLEASE RSVP</div><div class="divider"></div>
+  <div class="rsvp">
+   <p style="margin-top:0"><b>请填写以下资料，方便我们安排座位与餐点。</b><br><span class="rsvp-note">Please complete the form below so we can make the necessary arrangements.</span></p>
+   <form id="rsvpForm">
+    <label>姓名 Name</label><input name="name" required placeholder="请输入姓名">
+    <label>联络号码 Contact Number</label><input name="phone" type="tel" required placeholder="请输入手机号码">
+    <label>出席情况 Attendance</label>
+    <select name="attendance" required><option value="Attending">出席 Attending</option><option value="Unable to Attend">无法出席 Unable to Attend</option></select>
+    <div class="grid2">
+      <div><label>成人 Adults</label><input name="adults" type="number" min="0" value="1" required></div>
+      <div><label>小孩 Children</label><input name="children" type="number" min="0" value="0" required></div>
+    </div>
+    <label>饮食需求 Dietary Requirements</label><input name="dietary" placeholder="如无，请填写 No special requirements">
+    <label>备注 Remarks</label><textarea name="remarks" rows="3" placeholder="其他需要告诉我们的事项"></textarea>
+    <div id="status" class="status"></div>
+    <button class="btn" style="width:100%;margin:4px 0 8px" type="submit">提交 RSVP · SUBMIT</button>
+   </form>
+   <p class="rsvp-note">提交后将记录至云端 Google Sheets。正式连接 Google Sheets 后，你和老婆可以随时查看 RSVP 统计。</p>
+  </div>
+ </div>
+</section>
+
+<section class="section contact">
+ <div class="frame"></div>
+ <div class="inner">
+  <h2>如有任何疑问</h2><div class="sub" style="color:#d9bb79">CONTACT US</div><div class="divider"></div>
+  <div class="card"><div style="color:#e8cb82">吴伟彰 · GOH WEI CHANG</div><div style="margin-top:8px">WhatsApp 联系</div></div>
+  <div class="card"><div style="color:#e8cb82">刘彩萍 · LAW CHAI PENG</div><div style="margin-top:8px">WhatsApp 联系</div></div>
+  <p class="footertext" style="margin-top:30px">感谢您与家人拨冗出席<br>We look forward to celebrating with you.</p>
+  <div class="xi" style="font-size:58px;margin-top:28px">囍</div>
+ </div>
+</section>
+
+<div class="modal" id="modal" onclick="closeModal()">
+ <button aria-label="关闭" onclick="event.stopPropagation();closeModal()">×</button>
+ <img id="modalImg" alt="">
+</div>
+
+<script>
+const CONFIG = {
+  // Google Apps Script Web App URL will be pasted here after deployment.
+  RSVP_ENDPOINT: "",
+  // Add WhatsApp numbers here before going live if you want direct WhatsApp buttons.
+  GROOM_WHATSAPP: "",
+  BRIDE_WHATSAPP: ""
+};
+
+const target = new Date("2026-11-07T19:00:00+08:00").getTime();
+function tick(){
+  let x=Math.max(0,target-Date.now());
+  let d=Math.floor(x/86400000); x%=86400000;
+  let h=Math.floor(x/3600000); x%=3600000;
+  let m=Math.floor(x/60000); x%=60000;
+  let s=Math.floor(x/1000);
+  document.querySelector("#d").textContent=d;
+  document.querySelector("#h").textContent=String(h).padStart(2,"0");
+  document.querySelector("#m").textContent=String(m).padStart(2,"0");
+  document.querySelector("#s").textContent=String(s).padStart(2,"0");
+}
+tick(); setInterval(tick,1000);
+
+function addToCalendar(){
+  const ics = [
+    "BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Wedding Invitation//EN",
+    "BEGIN:VEVENT",
+    "UID:wedding-20261107@local",
+    "DTSTAMP:20260809T000000Z",
+    "DTSTART:20261107T100000Z",
+    "DTEND:20261107T140000Z",
+    "SUMMARY:吴伟彰 & 刘彩萍 Wedding 婚礼",
+    "LOCATION:御善阁宴会厅 Emperor Grand Ballroom",
+    "DESCRIPTION:入席 6:00 PM｜开席 7:00 PM",
+    "END:VEVENT","END:VCALENDAR"
+  ].join("\r\n");
+  const blob=new Blob([ics],{type:"text/calendar;charset=utf-8"});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement("a"); a.href=url; a.download="Goh-Wei-Chang-Law-Chai-Peng-Wedding.ics";
+  document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+}
+
+document.querySelectorAll(".gallery img").forEach(img=>{
+  img.addEventListener("click",()=>{
+    document.querySelector("#modalImg").src=img.src;
+    document.querySelector("#modal").style.display="flex";
+  });
+});
+function closeModal(){document.querySelector("#modal").style.display="none"}
+
+document.querySelector("#rsvpForm").addEventListener("submit", async e=>{
+  e.preventDefault();
+  const status=document.querySelector("#status");
+  const data=Object.fromEntries(new FormData(e.target).entries());
+  data.timestamp=new Date().toISOString();
+  if(!CONFIG.RSVP_ENDPOINT){
+    status.style.display="block";
+    status.style.background="#fff4d9"; status.style.color="#6b4a16";
+    status.textContent="网页视觉版已完成。RSVP 云端统计尚未连接 Google Sheets；完成 Google Apps Script 后，这里会自动写入表格。";
+    return;
+  }
+  status.style.display="block"; status.style.background="#eef8ef"; status.style.color="#2f6137";
+  status.textContent="正在提交，请稍候…";
+  try{
+    await fetch(CONFIG.RSVP_ENDPOINT,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(data)});
+    status.textContent="已收到 RSVP，谢谢您的回复！";
+    e.target.reset();
+  }catch(err){
+    status.style.background="#fff0f0"; status.style.color="#8a2d2d";
+    status.textContent="提交失败，请稍后再试或直接联系新人。";
+  }
+});
+</script>
+</body>
+</html>
