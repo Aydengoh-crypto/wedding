@@ -86,7 +86,28 @@ label{font-size:13px}
     letter-spacing:3px;
     color:#8b6965;
 }
+.countdown-main-title{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:16px;
+    margin-top:8px;
+}
 
+.countdown-main-title p{
+    margin:0;
+    font-size:20px;
+    letter-spacing:4px;
+    color:#6a0d13;
+    font-weight:500;
+}
+
+.countdown-main-title i{
+    font-family:Georgia,serif;
+    font-size:18px;
+    color:#c99d4b;
+    font-style:normal;
+}
 </style>
 </head>
 <body>
@@ -133,7 +154,12 @@ label{font-size:13px}
 
 <div class="countdown-title">
     <span>COUNTDOWN TO OUR DAY</span>
-    <p>距离我们的婚礼还有</p>
+
+    <div class="countdown-main-title">
+        <i>♡</i>
+        <p>距离我们的婚礼还有</p>
+        <i>♡</i>
+    </div>
 </div>
 <div class="count">
    <div class="box"><b id="d">--</b><span>DAYS</span></div>
