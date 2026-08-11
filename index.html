@@ -63,7 +63,30 @@ label{font-size:13px}
  .parents{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}
  .gallery .wide{grid-column:span 1}.grid2{grid-template-columns:1fr}
  .gallery img{min-height:300px}.gallery .wide img{aspect-ratio:3/4}
+}.gallery .wide img{aspect-ratio:3/4}
 }
+
+/* 倒计时标题 */
+.countdown-title{
+    margin:38px 0 18px;
+    text-align:center;
+}
+
+.countdown-title span{
+    display:block;
+    font:11px Georgia,serif;
+    letter-spacing:4px;
+    color:#a27430;
+    margin-bottom:9px;
+}
+
+.countdown-title p{
+    margin:0;
+    font-size:15px;
+    letter-spacing:3px;
+    color:#8b6965;
+}
+
 </style>
 </head>
 <body>
@@ -108,10 +131,10 @@ label{font-size:13px}
 一起走过未来的每一年。
 </p>
 
-<p class="story-footer">
-距离我们的婚礼还有
-</p>
-
+<div class="countdown-title">
+    <span>COUNTDOWN TO OUR DAY</span>
+    <p>距离我们的婚礼还有</p>
+</div>
 <div class="count">
    <div class="box"><b id="d">--</b><span>DAYS</span></div>
    <div class="box"><b id="h">--</b><span>HOURS</span></div>
