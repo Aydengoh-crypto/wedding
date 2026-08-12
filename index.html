@@ -41,11 +41,37 @@ h2{font-size:30px;color:var(--red);margin:0 0 8px}
 .parents{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:680px;margin:22px auto}
 .parent-card{background:#fff;border:1px solid #e5cd91;padding:20px;border-radius:10px}
 .parent-card small{color:#9b7337;letter-spacing:2px}.parent-card div{font-size:17px;line-height:1.8;margin-top:8px}
-.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:24px}
-.gallery figure{margin:0;overflow:hidden;border-radius:10px;background:#eadfcd}
-.gallery img{width:100%;height:auto;min-height:0;object-fit:contain;display:block;cursor:zoom-in}
-.gallery .wide{grid-column:span 2}.gallery .wide img{aspect-ratio:16/10}
-.gallery .tall img{aspect-ratio:2/3}
+.gallery{
+  display:flex;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  gap:14px;
+  margin-top:24px;
+  padding-bottom:8px;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+}
+
+.gallery::-webkit-scrollbar{
+  display:none;
+}
+
+.gallery figure{
+  flex:0 0 100%;
+  margin:0;
+  overflow:hidden;
+  border-radius:12px;
+  background:#eadfcd;
+  scroll-snap-align:center;
+}
+
+.gallery img{
+  width:100%;
+  height:auto;
+  display:block;
+  object-fit:contain;
+  cursor:zoom-in;
+}
 .rsvp{max-width:680px;margin:22px auto;background:#fff;padding:24px;border:1px solid #e5cd91;color:var(--ink);text-align:left;border-radius:12px}
 input,select,textarea{width:100%;padding:12px;border:1px solid #d8c39a;border-radius:8px;font:inherit;margin:6px 0 14px;background:#fff;color:var(--ink)}
 label{font-size:13px}
