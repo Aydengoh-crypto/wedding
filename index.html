@@ -56,13 +56,35 @@ h2{font-size:30px;color:var(--red);margin:0 0 8px}
   display:none;
 }
 
+.gallery{
+  display:flex;
+  overflow-x:auto;
+  overflow-y:hidden;
+  align-items:flex-start;
+  height:auto !important;
+  min-height:0 !important;
+}
+
 .gallery figure{
   flex:0 0 100%;
+  width:100%;
+  height:auto !important;
+  min-height:0 !important;
   margin:0;
+  padding:0;
   overflow:hidden;
   border-radius:12px;
   background:#eadfcd;
   scroll-snap-align:center;
+}
+
+.gallery figure img{
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  aspect-ratio:auto !important;
+  display:block;
+  object-fit:contain;
 }
 
 .gallery img{
