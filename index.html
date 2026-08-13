@@ -450,18 +450,20 @@ document.querySelector("#rsvpForm").addEventListener("submit", async e=>{
 </script>
 
 <script>
-(function () {
+document.addEventListener("DOMContentLoaded", function () {
+
     const targetDate = new Date("2026-11-07T18:00:00+08:00").getTime();
 
     function updateCountdown() {
+
         const now = new Date().getTime();
         const distance = targetDate - now;
 
         if (distance <= 0) {
             document.getElementById("d").textContent = "0";
-            document.getElementById("h").textContent = "0";
-            document.getElementById("m").textContent = "0";
-            document.getElementById("s").textContent = "0";
+            document.getElementById("h").textContent = "00";
+            document.getElementById("m").textContent = "00";
+            document.getElementById("s").textContent = "00";
             return;
         }
 
@@ -478,7 +480,8 @@ document.querySelector("#rsvpForm").addEventListener("submit", async e=>{
 
     updateCountdown();
     setInterval(updateCountdown, 1000);
-})();
+
+});
 </script>
 
 <script>
