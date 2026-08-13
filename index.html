@@ -447,18 +447,50 @@ document.querySelector("#rsvpForm").addEventListener("submit", async e=>{
   }
 });
 <script>
-const gallery = document.querySelector('.gallery');
-const dots = document.querySelectorAll('.gallery-dots span');
+(function () {
+  const photoGallery = document.querySelector('.gallery');
+  const photoFigures = document.querySelectorAll('.gallery figure');
+  const photoDots = document.querySelectorAll('.gallery-dots span');
 
-gallery.addEventListener('scroll', () => {
-  const index = Math.round(
-    gallery.scrollLeft / (gallery.clientWidth + 14)
-  );
+  if (!photoGallery || !photoFigures.length || !photoDots.length) return;
 
-  dots.forEach((dot, i) => {
-    dot.classList.toggle('active', i === index);
+  function updatePhotoDots() {
+    const center = photoGallery.scrollLeft + photoGallery.clientWidth / 2;
+    let active = 0;
+    let closest = Infinity;
+
+    photoFigures.forEach(function (figure, index) {
+      const figureCenter =
+        figure.offsetLeft + figure.offsetWidth / 2;
+
+      const distance = Math.abs(figureCenter - center);
+
+      if (distance < closest) {
+        closest = distance;
+        active = index;
+      }
+    });
+
+    photoDots.forEach(function (dot, index) {
+      dot.classList.toggle('active', index === active);
+    });
+  }
+
+  photoGallery.addEventListener('scroll', updatePhotoDots);
+  window.addEventListener('resize', updatePhotoDots);
+
+  photoDots.forEach(function (dot, index) {
+    dot.addEventListener('click', function () {
+      photoFigures[index].scrollIntoView({
+        behavior: 'smooth',
+        inline: 'center',
+        block: 'nearest'
+      });
+    });
   });
-});
+
+  updatePhotoDots();
+})();
 </script>
 </body>
 </html>
